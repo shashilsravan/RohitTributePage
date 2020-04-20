@@ -1,0 +1,95 @@
+body{
+  background-color: f2f2f2;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table{
+  border: 10x solid black;
+}
+
+th, td{
+  padding:0.5rem;
+  border: 1px dotted black;
+}
+
+tr:hover{
+  background-color: white;
+}
+
+.row {
+  padding: 4px 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h3{
+  font-size: 1rem;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px 4px;
+}
+
+
+.column img {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#tribute-link {
+  font-weight: bold;
+}
+
+
+td:nth-child(2){
+  color:orange;
+}
+td:nth-child(3){
+  color:rgb(121, 121, 241);
+}
+td:nth-child(4){
+  color:green;
+}
+
+#image {
+  max-width: 500px;
+  display: block;
+}
+
+#img-caption {
+  font-size: 28px;
+  background: -webkit-linear-gradient(rgb(24, 24, 204), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
